@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .main {
+           width: 400px;
+            height: 600px;
+            border: 1px solid black;
+            display: flex;
+
+            flex-wrap: wrap;
+        }
+        .main .item {
+            width: 150px;
+            height: 150px;
+            border: 1px solid blue;
+            display: flex;
+
+            /*justify-content: flex-start;*/
+            /*align-items: center;*/
+
+            /*justify-content: center;*/
+            /*align-items: flex-start;*/
+
+            /*justify-content: flex-end;*/
+            /*align-items: center;*/
+
+            /*justify-content: center;*/
+            /*align-items: flex-end;*/
+
+            justify-content: center;
+            align-items: center;
+        }
+        .main .item .point {
+            width: 50px;
+            height: 50px;
+            background-color: black;
+            border-radius: 25px;
+        }
+        .main .item2 {
+            width: 150px;
+            height: 150px;
+            border: 1px solid blue;
+            display: flex;
+
+            /*justify-content: space-between;*/
+
+            /*flex-direction: column;*/
+            /*justify-content: space-between;*/
+
+            /*flex-direction: column;*/
+            /*justify-content: space-between;*/
+            /*align-items: center;*/
+
+            /*justify-content: space-between;*/
+
+        }
+        .main .item2 .point {
+            width: 50px;
+            height: 50px;
+            background-color: black;
+            border-radius: 25px;
+
+        }
+        .main .item2 .point1 {
+            width: 50px;
+            height: 50px;
+            background-color: black;
+            border-radius: 25px;
+
+            /*align-self: center;*/
+            /*align-self: flex-end;*/
+
+        }
+
+        .main .item3 {
+            width: 150px;
+            height: 150px;
+            border: 1px solid blue;
+            display: flex;
+            flex-wrap: wrap;
+
+            /*align-content: space-between;*/
+
+            flex-direction: column;
+            align-content: space-between;
+
+        }
+        .main .item3 .point {
+            width: 50px;
+            height: 50px;
+            background-color: black;
+            border-radius: 25px;
+
+        }
+        .main .item4 {
+            width: 150px;
+            height: 150px;
+            border: 1px solid blue;
+        }
+        .main .item4 .row {
+            display: flex;
+        }
+        .main .item4 .row:nth-child(2) {
+            justify-content: center;
+        }
+        .main .item4 .row:nth-child(3) {
+            justify-content: space-between;
+        }
+        .main .item4 .point {
+            width: 50px;
+            height: 50px;
+            background-color: black;
+            border-radius: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="item">
+            <div class="point"></div>
+        </div>
+        <div class="item2">
+            <div class="point"></div>
+            <div class="point1"></div>
+        </div>
+        <div class="item3">
+            <div class="point"></div>
+            <div class="point"></div>
+            <div class="point"></div>
+            <div class="point"></div>
+            <div class="point"></div>
+            <div class="point"></div>
+        </div>
+        <div class="item4">
+            <div class="row">
+                <div class="point"></div>
+                <div class="point"></div>
+                <div class="point"></div>
+            </div>
+            <div class="row">
+                <div class="point"></div>
+            </div>
+            <div class="row">
+                <div class="point"></div>
+                <div class="point"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

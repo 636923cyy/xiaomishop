@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--jquery练习鼠标悬停一个元素另一个元素展示-->
+
+    <style>
+        .item {
+            width: 500px;
+            height: 200px;
+            border: 1px solid black;
+            display: flex;
+        }
+        .item1 {
+            width: 200px;
+            height: 200px;
+            background-color: #35b1ff;
+        }
+        .item2 {
+            width: 300px;
+            height: 200px;
+            background-color: #f37d0f;
+            display: none;
+
+        }
+    </style>
+</head>
+<body>
+<div class="item">
+    <div class="item1" onmouseover="showitem2();" onmouseout="hiddenttem2();"></div>
+    <div class="item2" onmouseover="showitem2();" onmouseout="hiddenttem2();"></div>
+</div>
+
+<script src="jquery-3.4.1.js"></script>
+
+<script>
+    function showitem2() {
+        $('.item2').attr('style','display:block');
+    }
+    function hiddenttem2() {
+        $('.item2').attr('style','display:none');
+    }
+</script>
+
+</body>
+</html>

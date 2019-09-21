@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--事件的讲解-->
+</head>
+<body>
+<!--事件绑定的方法（三个）-->
+<!--1.在标签上使用属性直接绑定-->
+<div id="item" onclick="test();"></div>
+<script>
+    function test() {
+        
+    }
+</script>
+
+<!--2.脚本访问onlcik等等属性-->
+<div id="item1"></div>
+<script>
+    document.getElementById('item1').onclick = function () {
+        
+    }
+</script>
+
+<!--3.脚本访问addEventListener()方法绑定-->
+//其第一个参数，把所有事件的on去掉
+<div id="item2"></div>
+<script>
+    document.getElementById('item2').addEventListener('click',function () {
+
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Title</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="fonts/iconfont.css">
+    <link rel="stylesheet" href="user.css">
+    <script>
+        ~function () {
+            function computed() {
+                var HTML = document.documentElement;
+                Device_Width = HTML.clientWidth;
+                if (Device_Width >= 375) {
+                    HTML.style.fontSize = '100px';
+                }
+                HTML.style.fontSize = Device_Width / 375 * 100 + 'px';
+            }
+
+            computed();
+            window.addEventListener('resize', computed);
+        }();
+    </script>
+</head>
+<body>
+<div class="main">
+
+    <div class="header">
+        <div class="header-item">
+            <div class="img"><img src="https://m.mi.com/static/img/avatar.76a75b8f17.png" alt=""></div>
+            <div class="name">登录/注册 </div>
+        </div>
+    </div>
+
+    <div class="order">
+        <div class="myorder">我的订单</div>
+        <div class="allorder">
+            <p>全部订单</p>
+            <span class="iconfont icon-dayuhao-copy-copy"></span>
+        </div>
+    </div>
+
+    <div class="title">
+        <div class="nopay">
+            <span class="iconfont icon-qianbao1"></span>
+            <p>代付款 </p>
+        </div>
+        <div class="takeorder">
+            <span class="iconfont icon-icon-test"></span>
+            <p>待收货</p>
+        </div>
+        <div class="repair">
+            <span class="iconfont icon-weixiu"></span>
+            <p>退换修</p>
+        </div>
+    </div>
+
+    <div class="line"></div>
+
+    <div class="part1">
+        <div class="number">
+            <span class="iconfont icon-huangguan"></span>
+            <p>会员中心</p>
+            <span class="iconfont icon-dayuhao-copy-copy"></span>
+        </div>
+        <div class="discount">
+            <span class="iconfont icon-qianbao"></span>
+            <p>我的优惠</p>
+            <span class="iconfont icon-dayuhao-copy-copy"></span>
+        </div>
+    </div>
+
+    <div class="line"></div>
+
+    <div class="service">
+        <div class="center">
+            <span class="iconfont icon-aixin1"></span>
+            <p>服务中心</p>
+            <span class="iconfont icon-dayuhao-copy-copy"></span>
+        </div>
+        <div class="home">
+            <span class="iconfont icon-fangzi1"></span>
+            <p>小米之家</p>
+            <span class="iconfont icon-dayuhao-copy-copy"></span>
+        </div>
+    </div>
+
+    <div class="line"></div>
+
+    <div class="way">
+        <span class="iconfont icon-f"></span>
+        <p>F码通道 </p>
+        <span class="iconfont icon-dayuhao-copy-copy"></span>
+    </div>
+
+    <div class="line"></div>
+
+    <div class="setup">
+        <span class="iconfont icon-chilun"></span>
+        <p>设置</p>
+        <span class="iconfont icon-dayuhao-copy-copy"></span>
+    </div>
+
+    <div class="line2"></div>
+
+    <div class="foot-wapper">
+        <a href="./index.html">
+            <span class="iconfont icon-fangzi"></span><p>首页</p>
+        </a>
+        <a href="./sort.html">
+            <span class="iconfont icon-fenlei"></span><p>分类</p>
+        </a>
+        <a href="./shoppingcart.html">
+            <span class="iconfont icon-qicheqianlian-1-copy"></span><p>购物车</p>
+        </a>
+        <a href="">
+            <span class="iconfont icon-yonghu"></span><p>我的 </p>
+        </a>
+    </div>
+
+</div>
+</body>
+</html>

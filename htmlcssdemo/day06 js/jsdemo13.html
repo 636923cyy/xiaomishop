@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--js面向对象
+    es5
+    创建对象（三种）：
+     1.利用构造函数
+     2.利用object创建  原型
+     3.Json语法-->
+</head>
+<body>
+
+<script>
+    <!--1.利用构造函数-->
+    function Test(name,age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    var t = new Test('张三',18);
+</script>
+
+<script>
+    <!-- 2.利用object创建  原型-->
+    var p = new Object();
+    p.name = '张三';
+    p.age = 18;
+</script>
+
+<script>
+    <!-- 3.Json语法-->
+   var p = {                    //对象
+        'name' : '张三',          //属性
+        'age' : 18,
+        'test' : function () {      //方法
+
+        },
+       'address' : {            //嵌套对象
+           'num' : 22
+        }
+    };
+
+</script>
+
+</body>
+</html>

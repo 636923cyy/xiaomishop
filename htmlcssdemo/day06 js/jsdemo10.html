@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--级联下拉菜单-->
+</head>
+<body>
+
+省：
+<select id="sheng"  class="sheng" onchange="test();">
+    <option>河北省</option>
+    <option>陕西省</option>
+</select>
+
+市：
+<select id="shi" class="shi">
+
+</select>
+
+
+<script>
+
+    function test() {
+
+        //1.当前被选中的是哪个省
+        var sheng = document.getElementById('sheng');
+        //jquery语法
+        //var sheng =$('.sheng');
+
+
+        //options[] :返回包含下拉列表中的所有选项的数组
+        //selectedInedx 设置或返回下拉列表中被选项目的索引号
+        var currentsheng  =  sheng.options[sheng.selectedIndex];
+
+        //清空数组
+        document.getElementById('shi').options.length = 0;
+        //jquery语法
+        //$('.shi').options.length = 0;
+
+        //2.根据被选择的省生成对应的城市
+        switch (currentsheng.text) {
+            case '河北省':
+                //创建option节点对象
+                //3.数据插入到select中
+                var shi = document.getElementById('shi');
+                //jquery语法
+                //var shi = $('.shi');
+                shi.options[shi.options.length] = new Option('石家庄','sjz');
+                shi.options[shi.options.length] = new Option('邯郸','hd');
+                shi.options[shi.options.length] = new Option('邢台','xt');
+
+                break;
+            case '陕西省':
+                var shi = document.getElementById('shi');
+                //jquery语法
+                //var shi = $('.shi');
+                shi.options[shi.options.length] = new Option('西安','xa');
+                shi.options[shi.options.length] = new Option('西安','xa');
+                shi.options[shi.options.length] = new Option('西安','xa');
+                break;
+        }
+
+    }
+
+
+</script>
+
+
+
+
+</body>
+</html>

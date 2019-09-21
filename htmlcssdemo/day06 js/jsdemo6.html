@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--自定义弹窗-->
+    <style>
+        body,p {
+            margin: 0;
+        }
+        button {
+            display: flex;
+        }
+        .layer {
+            position: fixed;
+            left: 0;
+            top: 0;
+
+            display: none;
+            justify-content: center;
+            align-items: center;
+
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(0,0,0,.3);
+        }
+        .item {
+            width: 300px;
+            height: 150px;
+            background-color: #fff;
+        }
+
+        .item .top {
+            width: inherit;
+            height: 30px;
+            line-height: 30px;
+            padding-left: 15px;
+            padding-top: 10px;
+        }
+        .item .coment {
+            width: inherit;
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .item .bottom {
+            width: inherit;
+            height: 40px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+    </style>
+    <script>
+        var  isdelete = false;
+        function show() {
+            document.getElementById('layer').setAttribute('style','display:flex');
+        }
+        function hiddent(x,e) {
+            if (e != undefined) {
+                //处理冒泡
+                e.cancelBubble = true;
+            }
+            document.getElementById('layer').removeAttribute('style');
+            isdelete = x;
+            console.log(isdelete);
+        }
+    </script>
+</head>
+<body>
+
+<button type="button" onclick="show();">删除 </button>
+<div class="layer" id="layer" onclick="hiddent(false)">
+    <div class="item">
+            <div class="top"><p>提示信息</p></div>
+            <div class="coment"><p>您确定要删除吗</p></div>
+            <div class="bottom">
+            <button onclick="hiddent(true,event)">确定</button>
+            <button onclick="hiddent(false)">取消</button>
+            </div>
+    </div>
+</div>
+</body>
+</html>

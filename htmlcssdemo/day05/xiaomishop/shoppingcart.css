@@ -1,0 +1,241 @@
+html{
+    font-size: 100px;
+}
+.main {
+    width: 100vw;
+    overflow: scroll;
+}
+.main::-webkit-scrollbar {
+    display: none;
+}
+
+header {
+    width: inherit;
+    height: .5rem;
+    background-color: #f2f2f2;
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .left {
+    width: .5209rem;
+    height: .2605rem;
+    display: flex;
+    justify-content: center;
+}
+header .left .iconfont {
+    font-size: .2205rem;
+}
+header .middle {
+    width: 2.7101rem;
+    height: .176rem;
+    font-size: .156rem;
+    color: #666666;
+}
+header .middle span {
+    width: 2.7101rem;
+    height: .176rem;
+    font-size: .156rem;
+    color: #666666;
+    display: flex;
+    justify-content: center;
+}
+header .right {
+    width: .521rem;
+    height: .3126rem;
+    display: flex;
+}
+header .right .iconfont {
+    font-size: .2626rem;
+}
+
+
+.foot-wapper {
+    width: inherit;
+    height: .52rem;
+    position: fixed;
+    z-index: 99;
+    top: 6.14rem;/*6.14*/
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+}
+.foot-wapper a {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: .9094rem;
+    height: .3884rem;
+    box-sizing: border-box;
+}
+.foot-wapper a:nth-child(3){
+    width: 1.024rem;
+}
+.foot-wapper a span {
+    width: .2084rem;
+    height: .2084rem;
+}
+.foot-wapper a  .iconfont {
+    font-size: .2048rem;
+    color: #999999;
+}
+.foot-wapper a p {
+    font-size: .1146rem;
+    color: #999999;
+    font-weight: bold;
+}
+.foot-wapper a:nth-child(3) .iconfont {
+    color: #ff6700;
+}
+
+.foot-wapper a:nth-child(3) p {
+    color: #ff6700;
+}
+
+.body-wapper{
+    widows: inherit;
+    height: 100%;
+    padding: .5rem 0 .52rem 0;
+}
+.body-wapper .part1 {
+    width: inherit;
+    height: .5419rem;
+    display: flex;
+    align-items: center;
+}
+.body-wapper .part1 .flex {
+    width: 2.3rem;
+    height: .185rem;
+    font-size: .1667rem;
+    color: rgba(0,0,0,.87);
+    margin-left: .15rem;
+}
+.body-wapper .part1 p {
+    width: 1.08rem;
+    height: .136rem;
+    font-size: .13rem;
+    color: rgba(0,0,0,.54);
+    text-align: right;
+    margin-right: .1rem;
+}
+.body-wapper .part1 .iconfont {
+    width: .16rem;
+    height: .16rem;
+    line-height: .16rem;
+    font-size: .16rem;
+    font-weight: bolder;
+    margin-right: .12rem;
+    color: #777777;
+}
+
+
+
+.body-wapper .part2 {
+    width: inherit;
+    height: .6243rem;
+    background-color: #ebebeb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.body-wapper .part2 .iconfont {
+    width: .5rem;
+    height: .5rem;
+    line-height: .5rem;
+    font-size: .5rem;
+    color: #999999;
+}
+.body-wapper .part2 .p1 {
+    width: 1rem;
+    height: .416rem;
+    line-height: .416rem;
+    font-size: .125rem;
+    color: rgba(0,0,0,.27);
+    text-align: center;
+}
+.body-wapper .part2 .p2 {
+    width: .6451rem;
+    height: .2605rem;
+    line-height: .2605rem;
+    font-size: .125rem;
+    text-align: center;
+    color: rgba(0,0,0,.87);
+    border: 1px solid rgba(0,0,0,.15);
+    box-sizing: border-box;
+}
+
+
+.body-wapper .img-wapper{
+    width: inherit;
+    height: .6253rem;
+    display: flex;
+}
+.body-wapper .img-wapper img {
+    width: inherit;
+    height: inherit;
+}
+
+
+
+.body-wapper .box {
+    width: inherit;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.body-wapper .box .item {
+    width: 1.8571rem;
+    height: 2.4455rem;
+    margin: .02rem 0;
+}
+.body-wapper .box .item .img {
+    width: inherit;
+    height: 1.8571rem;
+}
+.body-wapper .box .item .img img {
+    width: inherit;
+    height: inherit;
+}
+.body-wapper .box .item .desc {
+    width: inherit;
+    height: .5884rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.body-wapper .box .item .desc .name {
+    width: 1.501rem;
+    height: .16rem;
+    font-size: .1459rem;
+    color: rgba(0,0,0,0.87);
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+    /*text-overflow: ellipsis;*/
+}
+.body-wapper .box .item .desc .price {
+    width: 1.1rem;
+    height: .22rem;
+    display: flex;
+    margin: 0 auto;
+}
+.body-wapper .box .item .desc .price .p1 {
+    width: .55rem;
+    height: inherit;
+    font-size: .166rem;
+    color: #ff6700;
+    line-height: .22rem;
+    margin-right: .025rem;
+}
+.body-wapper .box .item .desc .price .p2 {
+    width: .45rem;
+    height: inherit;
+    font-size: .115rem;
+    line-height: .22rem;
+    color: rgba(0,0,0,0.54);
+    text-decoration: line-through;
+}

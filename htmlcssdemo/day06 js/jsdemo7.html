@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--方法（函数）-->
+    <script>
+        <!--例一-->
+        //形参不用声明数据类型,实参按形参的顺序赋值
+        function a(x,y,z) {
+
+        }
+        a(10,20);
+
+        //例二
+        //有实参没形参也可以，方法内内置了一个arguments数组
+        function b() {
+            //方法内内置了一个arguments数组，这个数组会接收实参
+            console.log(arguments);
+        }
+        b(10,20,30);
+
+
+        //例三 形参默认数据类型为undefined
+        function c(x,y,z) {
+
+            //如何不让形参默认的数据类型不为undefined
+            x = x || 0;
+        }
+        c();
+
+
+        //例四 方法表达式：将一个匿名方法赋值给一个变量
+        var d = function () {
+
+        };
+
+
+        //例五 方法回调
+        function e() {
+
+        }
+        var f = function () {
+
+        };
+        e(f);
+
+        //例六 一次性定时器 setTimeout(方法，时间);
+        // setTimeout(function () {
+        //     window.close();
+        // },2000);
+
+        //例七 重复定时器
+        // setInterval(function () {
+        //     console.log(1);
+        // },1000);
+
+
+        //例八 定时器应用
+        //定时八秒 ，页面显示秒数，八秒之后关闭页面
+        // var time = 8;
+        // setInterval(function () {
+        //     if (time >0) {
+        //         document.getElementById('t').innerText = --time;
+        //     }else{
+        //         window.close();
+        //     }
+        // },1000);
+
+        //例九 定时器清理（关闭）
+        //移动一张图片，移动到 屏幕最右边时关闭
+        var  step = 100;
+        var demo = setInterval(function () {
+            document.getElementById('i').setAttribute('style','margin-left:' + step + 'px');
+            step += 100;
+            if (step >= 1000) {
+                //关闭定时器
+                clearInterval(demo);
+            }
+        },200);
+
+
+
+    </script>
+</head>
+<body>
+    <!--例八 定时器应用-->
+    <!--定时八秒 ，页面显示秒数，八秒之后关闭页面-->
+    <!--<div class="test">-->
+        <!--页面将在<span id="t">8</span>之后关闭-->
+    <!--</div>-->
+
+    <!--例九 定时器清理（关闭）-->
+    <!--移动一张图片，移动到 屏幕最右边时关闭-->
+    <img id="i" src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3585316294,672085628&fm=26&gp=0.jpg" alt="">
+
+
+</body>
+</html>

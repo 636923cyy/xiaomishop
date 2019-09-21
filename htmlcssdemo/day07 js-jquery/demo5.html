@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--jquery练习购物数字加减框-->
+
+    <style>
+        .item {
+            width: 60px;
+            height: 20px;
+            display: flex;
+        }
+        .test {
+            width: 20px;
+            height: 20px;
+            background-color: #ea625b;
+        }
+        .test1 {
+            width: 20px;
+            height: 20px;
+        }
+        .test2 {
+            width: 20px;
+            height: 20px;
+            background-color: #ea625b;
+        }
+    </style>
+
+    <script src="jquery-3.4.1.js"></script>
+    <script>
+        function add() {
+           let value =  $('.test1').attr('value');
+           if (value < 200){
+               $('.test1').attr('value',++value);
+           }
+        }
+        function sub() {
+            let value =  $('.test1').attr('value');
+            if (value > 1){
+                $('.test1').attr('value',--value);
+            }
+        }
+    </script>
+
+
+</head>
+<body>
+
+<div class="item">
+    <button class="test" type="button" onclick="sub();">-</button>
+    <input class="test1" type="text" value="1">
+    <button class="test2" type="button" onclick="add();">+</button>
+</div>
+
+
+</body>
+</html>

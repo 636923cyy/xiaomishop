@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--jquery练习鼠标悬停字体颜色改变-->
+
+    <style>
+        .item {
+            width: 200px;
+            height: 200px;
+            font-size: 20px;
+            text-align: center;
+            line-height: 200px;
+            color: black;
+            background-color: #0066cc;
+        }
+    </style>
+    <script src="jquery-3.4.1.js"></script>
+    <script>
+        function showcolor() {
+            $('.item').attr('style','color:red');
+        }
+        function hiddentcolor() {
+            $('.item').attr('style','color:black');
+        }
+    </script>
+
+</head>
+<body>
+<div class="item" onmouseover="showcolor();" onmouseout="hiddentcolor();">鼠标悬停字体颜色改变</div>
+</body>
+</html>

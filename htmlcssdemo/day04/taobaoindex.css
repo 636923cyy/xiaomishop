@@ -1,0 +1,510 @@
+.main{
+    width: 1190px;
+    margin: 0 auto;
+    background-color: #f4f4f4;
+}
+.head {
+    height: 30px;
+    line-height: 30px;
+    color: #ffffff;
+    background-color: #ff4200;
+}
+.head p {
+    height: inherit;
+    display: inline-block;
+    float: left;
+    padding: 0 50px;
+    font-size: 16px;
+}
+.head .title {
+    height: inherit;
+    float: left;
+    color: #ffffff;
+    font-size: 16px;
+}
+.head .title ul {
+    display: inline-block;
+
+}
+.head .title ul li {
+    float: left;
+    padding: 0 5px;
+}
+.hot-wapper {
+    width: inherit;
+    height: 630px;
+    margin: 10px auto;
+}
+.hot-wapper .left {
+    width: 890px;
+    height:inherit;
+    border: 1px solid black;
+    float: left;
+
+}
+.hot-wapper .right {
+    width: 290px;
+    height: inherit;
+    border: 1px solid black;
+    float: right;
+
+}
+.hot-wapper .left .top {
+    width:inherit;
+    height: 520px;
+    border: 1px solid black;
+    float: top;
+}
+.hot-wapper .left .buttom {
+    width:inherit;
+    height: 100px;
+    border: 1px solid black;
+    margin-top: 5px;
+    display: inline-block;
+}
+
+.hot-wapper .left .top .left2 {
+    width: 180px;
+    height: inherit;
+    border: 1px solid #ff5000;
+    display: inline-block;
+    float: left;
+}
+.hot-wapper .left .top .left2 .clothes {
+    margin: 11px 10px 11px 20px;
+}
+.hot-wapper .left .top .middle {
+    width: 520px;
+    height: inherit;
+    border: 1px solid black;
+    display: inline-block;
+    margin-left: 10px;
+}
+.hot-wapper .left .top .right2 {
+    width: 160px;
+    height: inherit;
+    border: 1px solid black;
+    display: inline-block;
+    float: right;
+}
+.hot-wapper .left .top .middle .top2 {
+    width: inherit;
+    height: 280px;
+}
+.hot-wapper .left .top .middle .middle2 {
+    width: inherit;
+    height: 25px;
+    margin-top: 10px;
+}
+.hot-wapper .left .top .middle .middle2 p {
+    display: inline-block;
+    margin: auto 10px;
+}
+.hot-wapper .left .top .middle .middle2 .line {
+    width: inherit;
+    height: 3px;
+    background-color: #ff1648;
+}
+.hot-wapper .left .top .middle .buttom2 {
+    width: inherit;
+    height: 190px;
+    margin-top:10px;
+}
+.hot-wapper .left .top .right2 .top3 {
+    width: inherit;
+    height: 280px;
+}
+.hot-wapper .left .top .right2 p {
+    width: inherit;
+    height: 30px;
+    margin-top: 10px;
+}
+.hot-wapper .left .top .right2 .buttom3 {
+    width: inherit;
+    height: 200px;
+
+}
+.hot-wapper .left .top .middle .buttom2 .left3 {
+    width: 250px;
+    height: inherit;
+    display: inline-block;
+    float: left;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+.hot-wapper .left .top .middle .buttom2 .right3 {
+    width: 250px;
+    height: inherit;
+    display: inline-block;
+    float: right;
+    margin-top: 5px;
+}
+
+
+
+
+
+.hot-wapper .left .buttom h1 {
+    <!--width: 180px;-->
+    <!--height: 73px;-->
+    display: inline-block;
+    float: left;
+}
+.hot-wapper .left .buttom h1 img {
+    width: 129px;
+    height: 26px;
+    margin-top: 22px;
+    margin-left: 30px;
+}
+.hot-wapper .left .buttom h1 p {
+    line-height: 24px;
+    color: #999999;
+    font-size: 100%;
+    margin-top: 5px;
+    margin-left: 30px;
+}
+.hot-wapper .left .buttom .item {
+    margin-top: 12px;
+    margin-left: 50px;
+    display: inline-block;
+}
+.hot-wapper .left .buttom .item img {
+    width: 130px;
+    height: 73px;
+    float: left;
+}
+.hot-wapper .left .buttom .item h1 {
+    margin-left: 30px;
+    line-height: 28px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.hot-wapper .left .buttom .item p {
+    width: 500px;
+    margin-left: 150px;
+    margin-top: 30px;
+    color: #999999;
+    line-height: 18px;
+    font-size: 14px;
+}
+
+
+
+
+
+
+.hot-wapper .right .number {
+    width: inherit;
+    height: 90px;
+}
+.hot-wapper .right .number img {
+    width: 50px;
+    height: 50px;
+    margin:2px 120px;
+   border-radius: 25px;
+}
+.hot-wapper .right .number .title {
+    width: inherit;
+    height: 17px;
+    font-size: 12px;
+    color: #3c3c3c;
+    text-align: center;
+}
+.hot-wapper .right .number .title2 {
+    font-size: 12px;
+    color: #ff5000;
+    background-color: #ffe4d8;
+    width: 102px;
+    height: 16.8px;
+    line-height: 16.8px;
+    margin: 0 0 0 30px;
+    padding: 0 5px 0 5px;
+    text-align: center;
+    display: inline-block;
+    float: left;
+    border-radius: 0.5em;
+}
+.hot-wapper .right .number .title3 {
+    display: inline-block;
+    float: right;
+    font-size: 12px;
+    text-align: center;
+    margin: 0 30px 0 0;
+    padding: 0 5px 0 5px;
+    color: #ff5000;
+    background-color: #ffe4d8;
+    width: 90px;
+    height: 16.8px;
+    line-height: 16.8px;
+    border-radius: 0.5em;
+}
+.hot-wapper .right .number2 {
+    width: inherit;
+    height: 40px;
+    margin-top: 10px;
+    padding: 0 0 0 15px;
+}
+.hot-wapper .right .number2 a {
+    width: 75px;
+    height: 24.8px;
+    font-size: 14px;
+    line-height: 24.6px;
+    color: #fff;
+    background-color: #ff5000;
+    margin: 0 7px 0 0;
+    text-align: center;
+    border-radius: 0.5em;
+}
+.hot-wapper .right .number3 {
+    background-color: #ffe4dd;
+}
+.hot-wapper .right .number3 a {
+    width: inherit;
+    height: 26px;
+    font-size: 12px;
+    color: #ff4400;
+    text-align: center;
+    padding-left: 80px;
+}
+.hot-wapper .right .number4 {
+    width: inherit;
+    height: 98px;
+    padding: 10px 0 0;
+}
+.hot-wapper .right .number4 .item ul{
+    width: inherit;
+    height: 24px;
+    margin: 4px -2px 0 0;
+    padding: 0 8px;
+}
+.hot-wapper .right .number4 .item li {
+    display: inline-block;
+    width: 32px;
+    height: 20px;
+    margin: 0 9px;
+}
+.hot-wapper .right .number4 .item li a {
+    width: 24px;
+    height: 14.4px;
+    font-size: 12px;
+    color: #3c3c3c;
+}
+.hot-wapper .right .number4 .item2{
+    width: inherit;
+    height: 65px;
+}
+.hot-wapper .right .number4 .item2 ul {
+    width: 266px;
+    height: inherit;
+    margin: 0 12px;
+    padding: 9px 0 6px;
+    font-size: 12px;
+}
+.hot-wapper .right .number4 .item2 li {
+    width: 130px;
+    height: 25px;
+    overflow: hidden;
+}
+.hot-wapper .right .number4 .item2 .a {
+    display: inline-block;
+    float: left;
+}
+.hot-wapper .right .number4 .item2 .b {
+    display: inline-block;
+    float: left;
+    clear: right;
+}
+.hot-wapper .right .number4 .item2 .c {
+    display: inline-block;
+}
+.hot-wapper .right .number4 .item2 .d {
+    display: inline-block;
+}
+.hot-wapper .right .number4 .item a {
+    width: 120px;
+    height: 39.2px;
+    font-size: 12px;
+    color: #3c3c3c;
+    overflow: hidden;
+}
+.hot-wapper .right .number5 {
+    width: inherit;
+    height: 232px;
+    background-color: #ffe4dd;
+}
+.hot-wapper .right .number6 {
+    width: inherit;
+    height: 110px;
+}
+.hot-wapper .right .number6 h1 {
+    width: inherit;
+    height: 25px;
+    font-size: 14px;
+    color: #3c3c3c;
+    margin-top: 10px;
+    padding: 0 0 0 14px;
+    display: inline-block;
+}
+.hot-wapper .right .number6 ul {
+    width: inherit;
+    height: 84px;
+    padding: 0 0 0 23px;
+}
+.hot-wapper .right .number6 li {
+    width: 32px;
+    height: 32px;
+    margin: 0 20px 8px 0;
+    float: left;
+}
+.hot-wapper .right .number6 .a {
+    clear: right;
+}
+.hot-wapper .right .number6 img {
+    width: 32px;
+    height: 32px;
+}
+.like-wapper {
+    width: inherit;
+    height: 658px;
+}
+.like-wapper .left {
+    width: 590px;
+    height: inherit;
+    display: inline-block;
+    float: left;
+    border: 1px solid black;
+    background-color: #fff;
+}
+.like-wapper .right {
+    width: 590px;
+    height: inherit;
+    display: inline-block;
+    float: right;
+    border: 1px solid black;
+    background-color: #fff;
+}
+.like-wapper .left .title .itme1 {
+    margin: 20px 5px 0 20px;
+}
+.like-wapper .left .title .itme1 img {
+    width: 74px;
+    height: 24px;
+    vertical-align: top;
+}
+.like-wapper .left .title .itme1 p {
+    width: 108px;
+    font-size: 12px;
+    color: #999999;
+    font-weight: 400;
+    display: inline-block;
+    line-height: 24px;
+    vertical-align: top;
+}
+.like-wapper .left .title .item {
+    width: 180px;
+    height: 271px;
+    margin: 20px 5px 0 10px;
+    float: left;
+}
+.like-wapper .left .title .item img {
+    width: 180px;
+    height: 180px;
+}
+.like-wapper .left .title .item .desc {
+    padding: 0 4px 0 6px;
+}
+.like-wapper .left .title .item .desc h1 {
+    width: 170px;
+    height: 28px;
+    color: #3c3c3c;
+    font-size: 16px;
+    margin: 5px 0 0;
+    line-height: 28px;
+    font-weight: normal;
+    overflow: hidden;
+}
+.like-wapper .left .title .item .desc .p1 {
+    width: 170px;
+    height: 16px;
+    line-height: 16px;
+    color: #999999;
+    font-size: 14px;
+    display: block;
+   overflow: hidden;
+}
+.like-wapper .left .title .item .desc .p2 {
+    width: 170px;
+    height: 22px;
+    color:#35b1ff;
+    font-size: 14px;
+    margin: 12px 0 0;
+    line-height: 22px;
+    display: block;
+}
+.like-wapper .left .title .item:nth-child(3) {
+    clear: right;
+}
+
+
+
+.like-wapper .right .title .itme1 {
+    margin: 20px 5px 0 20px;
+}
+.like-wapper .right .title .itme1 img {
+    width: 74px;
+    height: 24px;
+    vertical-align: top;
+}
+.like-wapper .right .title .itme1 p {
+    width: 108px;
+    font-size: 12px;
+    color: #999999;
+    font-weight: 400;
+    display: inline-block;
+    line-height: 24px;
+    vertical-align: top;
+}
+.like-wapper .right .title .item {
+    width: 180px;
+    height: 271px;
+    margin: 20px 5px 0 10px;
+    float: left;
+}
+.like-wapper .right .title .item img {
+    width: 180px;
+    height: 180px;
+}
+.like-wapper .right .title .item .desc {
+    padding: 0 4px 0 6px;
+}
+.like-wapper .right .title .item .desc h1 {
+    width: 170px;
+    height: 28px;
+    color: #3c3c3c;
+    font-size: 16px;
+    margin: 5px 0 0;
+    line-height: 28px;
+    font-weight: normal;
+    overflow: hidden;
+}
+.like-wapper .right .title .item .desc .p1 {
+    width: 170px;
+    height: 16px;
+    line-height: 16px;
+    color: #999999;
+    font-size: 14px;
+    display: block;
+    overflow: hidden;
+}
+.like-wapper .right .title .item .desc .p2 {
+    width: 170px;
+    height: 22px;
+    color:#35b1ff;
+    font-size: 14px;
+    margin: 12px 0 0;
+    line-height: 22px;
+    display: block;
+}
+.like-wapper .right .title .item:nth-child(3) {
+    clear: right;
+}

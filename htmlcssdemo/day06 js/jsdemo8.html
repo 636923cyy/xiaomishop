@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--todoLList功能（记事本 便签 ）-->
+</head>
+<body>
+
+<div class="input">
+    //给input标签添加回车事件
+    <input id="inputToDo" type="text" onkeypress="addToDo(event);">
+</div>
+
+
+代办事务:<ul id="todo">
+
+        </ul>
+
+已完成事务:<ul id="finished">
+
+        </ul>
+
+<script>
+
+    //1.给上面两个节点创建数组，定义回车常量
+    const ENTER_CODE = 13;
+    var todo = [];
+    var finished = [];
+
+    //2.遍历数组，并将其赋值给s；获取某个节点并将s的值赋给它
+
+    function renderToDo() {
+        //遍历todo数组，并将其赋值给s
+        var s = '';
+        todo.forEach(function (value,index) {
+            //获取数组里面的值，并且给其添加完成和删除事件
+            s += '<li><span>'+ value +'</span><button type="button" onclick="addFinished('+ index +');">完成</button><button type="button" onclick="deleteToDo('+ index +');">删除</button></li>';
+        });
+        //获取todo节点并将s的值赋给它
+        document.getElementById('todo').innerHTML = s;
+    }
+    renderToDo();
+
+    function renderFinished() {
+        //遍历todo数组，并将其赋值给s
+        var s = '';
+        finished.forEach(function (value, index) {
+            //获取数组里面的值，并且给其添加删除事件
+            s += '<li><span>'+ value +'</span><button type="button" onclick="deleteFinished('+ index +');">删除</button></li>';
+        });
+        //获取finished节点并将s的值赋给它
+        document.getElementById('finished').innerHTML = s;
+    }
+    renderFinished();
+
+    //3.给input标签添加回车事件的方法
+    //event叫做事件对象，键盘鼠标都有这个对象，这个对象里面包含此次对象的所有信息
+    function addToDo(event) {
+        //判断键盘是否是回车事件
+        if (event.which == ENTER_CODE){
+            //1.获得输入框的值
+            var inputToDo = document.getElementById('inputToDo');
+
+            //inputToDo.value 获取节点的值
+            //inputToDo.value = ''; 给节点赋值
+            var value = inputToDo.value;
+            //2.判断输入的值是否为空
+            if (value !== ''){
+                //3.将输入的值插入到数组中
+                todo.push(value);
+                //4.将输入框清空
+                inputToDo.value = '';
+                //刷新todo局部页面
+                renderToDo();
+            }
+        }
+    }
+
+    //4.待完成时的删除方法
+    function deleteToDo(row) {
+        //1.删除哪一行按钮
+        //2.删除 指定行数据
+        todo.splice(row,1);
+        renderToDo();
+    }
+
+    //5.待完成添加到已完成的方法
+    function addFinished(row) {
+        finished.push( todo.splice(row,1));
+        renderToDo();
+        renderFinished();
+    }
+
+    //6.已完成中的删除方法
+    function deleteFinished(row) {
+        finished.splice(row,1);
+        renderFinished();
+    }
+
+</script>
+
+</body>
+</html>

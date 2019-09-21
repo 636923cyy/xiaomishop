@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--jquery练习 函数回调 定时器练习-->
+</head>
+
+
+<script src="jquery-3.4.1.js"></script>
+<script>
+    let time = 8;
+    setInterval(function () {
+        if (time > 0){
+            $('.item').text(--time);
+        } else{
+            window.close();
+        }
+    },1000);
+</script>
+
+<body>
+<div class="test">
+    页面将在<p class="item">8</p>s后自动关闭
+</div>
+
+</body>
+</html>

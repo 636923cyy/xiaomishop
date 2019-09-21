@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--点击按钮切换图片-->
+</head>
+<body>
+<img id="img" style="width: 400px; height:200px;" src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3585316294,672085628&fm=26&gp=0.jpg" alt="">
+<button type="button" onclick="change();">我要换图片</button>
+
+<script>
+    function change() {
+        var img = document.getElementById('img');
+        img.setAttribute('src','https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=4207760568,2429085154&fm=26&gp=0.jpg');
+
+        //以上两行代码可以简写为下面这一句
+        //document.getElementById('img').setAttribute();
+
+
+        //打印img的style属性
+        console.log(img.getAttribute('style'));
+        //设置 img的高度
+        img.setAttribute('style','height=300px');
+        //移除img的alt属性
+        img.removeAttribute('alt');
+    }
+
+</script>
+</body>
+</html>

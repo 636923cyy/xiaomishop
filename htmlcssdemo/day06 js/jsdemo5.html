@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--购物数字加减框-->
+    <style>
+        .item  {
+            width: 75px;
+            height: 20px;
+            display: flex;
+            border: 1px solid black;
+        }
+        .item2 {
+            width: 20px;
+            height: inherit;
+            font-size: 15px;
+
+            color: red;
+        }
+        .item4 {
+            width: 20px;
+            height: inherit;
+            font-size: 15px;
+            color: red;
+        }
+        .item3 {
+            width: 35px;
+            height: inherit;
+            font-size: 15px;
+            font-weight: bolder;
+            line-height: 20px;
+            text-align: center;
+            color: black;
+        }
+    </style>
+
+    <script>
+        function sub() {
+            var item3 = document.getElementById('item3');
+            var value = parseInt(item3.getAttribute('value'));
+            if(value >= 1){
+                item3.setAttribute('value',--value);
+            }
+        }
+        function add() {
+            var item3 = document.getElementById('item3');
+            var value = parseInt(item3.getAttribute('value'));
+            if(value <= 200){
+                item3.setAttribute('value',++value);
+            }
+        }
+    </script>
+
+
+</head>
+<body>
+<div class="item">
+
+    <button class="item2" id="item2" onclick="sub();">-</button>
+    <input class="item3" id="item3" type="text" value="1">
+    <button class="item4" class="item4" onclick="add();">+</button>
+
+</div>
+</body>
+</html>

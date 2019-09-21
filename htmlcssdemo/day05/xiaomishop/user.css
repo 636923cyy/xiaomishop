@@ -1,0 +1,432 @@
+html{
+    font-size: 100px;
+}
+body {
+    font-family: "Microsoft YaHei";
+    color: #333;
+    width: 100%;
+    max-width: 640px;
+    min-width: 320px;
+    margin:0 auto;
+}
+.main {
+    width: 100vw;
+    background-color: #f5f5f5;
+}
+.header {
+    width: inherit;
+    height: .8338rem;
+    background: url("https://m.mi.com/static/img/bg.63c8e19851.png") center 0 #f37d0f;
+    background-size: auto 100%;
+}
+.header .header-item {
+    widows: inherit;
+    height: .5003rem;
+    display: flex;
+    align-items: center;
+    padding-top: .15rem;
+}
+.header .header-item .img {
+    width: .5003rem;
+    height: .5003rem;
+
+    overflow: hidden;
+    box-sizing: border-box;
+    border-radius: 100%;
+    border: 3px solid hsla(0,0%,100%,.4);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: .15rem .1rem .15rem .15rem;
+
+}
+.header .header-item .img img {
+    width: inherit;
+    height: inherit;
+}
+.header .header-item .name {
+    width: .7rem;
+    height: .136rem;
+    font-size: .13rem;
+    color: #ffffff;
+    text-align: left;
+}
+
+.order{
+   width: inherit;
+    height: .4069rem;
+    border-bottom: 1px solid rgba(0,0,0,.15);
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.order .myorder {
+    width: .7106rem;
+    height: .16rem;
+    font-size: .14rem;
+    line-height: .16rem;
+    color: rgba(0,0,0,.87);
+    margin-left: .16rem;
+}
+.order .allorder {
+    display: flex;
+    align-items: center;
+}
+.order .allorder p {
+    width: .6rem;
+    height: .16rem;
+    line-height: .16rem;
+    font-size: .13rem;
+    color: rgba(0,0,0,.87);
+}
+.order .allorder .iconfont {
+    width: .16rem;
+    height: .16rem;
+    line-height: .16rem;
+    font-size: .16rem;
+    font-weight: bolder;
+    margin-right: .12rem;
+    color: #777777;
+}
+
+.title {
+    width: inherit;
+    height: .8783rem;
+    background: #ffffff;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.title .nopay {
+    width: .38rem;
+    height: .4615rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.title .nopay .iconfont{
+    width: .2501rem;
+    height: .2501rem;
+    font-size: .25rem;
+    color: #888888;
+}
+.title .nopay p {
+    width: .40rem;
+    height: .14rem;
+    font-size: .12rem;
+}
+.title .takeorder {
+    width: .38rem;
+    height: .4615rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.title .takeorder .iconfont {
+    width: .2501rem;
+    height: .2501rem;
+    font-size: .22rem;
+    color: #888888;
+}
+.title .takeorder p {
+    width: .40rem;
+    height: .14rem;
+    font-size: .12rem;
+}
+.title .repair {
+    width: .38rem;
+    height: .4615rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.title .repair .iconfont {
+    width: .2501rem;
+    height: .2501rem;
+    font-size: .22rem;
+    color: #888888;
+}
+.title .repair p {
+    width: .40rem;
+    height: .14rem;
+    font-size: .12rem;
+}
+
+.line {
+    width: inherit;
+    height: .1041rem;
+    background-color: #f5f5f5;
+}
+
+.part1 {
+    width: inherit;
+    height: 1.1038rem;
+    background-color: #fff;
+}
+
+.part1 .number {
+    width: inherit;
+    height: .5419rem;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(0,0,0,.15);
+}
+.part1 .number .icon-huangguan {
+    width: .3rem;
+    height: .3rem;
+    line-height: .3rem;
+    font-size: .25rem;
+    color: #ffae00db;
+    margin-left: .16rem;
+    margin-right: .16rem;
+}
+.part1 .number p {
+    width: .6rem;
+    height: .16rem;
+    line-height: .16rem;
+    font-size: .14rem;
+    color: rgba(0,0,0,.87);
+    margin-right: 2.2rem;
+}
+.part1 .number .icon-dayuhao-copy-copy{
+    width: .16rem;
+    height: .16rem;
+    line-height: .16rem;
+    font-size: .16rem;
+    font-weight: bolder;
+    margin-right: .12rem;
+    color: #777777;
+}
+
+.part1 .discount {
+    width: inherit;
+    height: .5419rem;
+    display: flex;
+    align-items: center;
+}
+.part1 .discount .icon-qianbao {
+    width: .3rem;
+    height: .3rem;
+    line-height: .3rem;
+    font-size: .25rem;
+    color: cornflowerblue;
+    margin-left: .16rem;
+    margin-right: .16rem;
+}
+.part1 .discount p {
+    width: .6rem;
+    height: .16rem;
+    line-height: .16rem;
+    font-size: .14rem;
+    color: rgba(0,0,0,.87);
+    margin-right: 2.2rem;
+}
+.part1 .discount .icon-dayuhao-copy-copy{
+    width: .16rem;
+    height: .16rem;
+    line-height: .16rem;
+    font-size: .16rem;
+    font-weight: bolder;
+    margin-right: .12rem;
+    color: #777777;
+}
+
+
+.service {
+    width: inherit;
+    height: 1.1038rem;
+    background-color: #fff;
+}
+
+.service .center {
+    width: inherit;
+    height: .5419rem;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(0,0,0,.15);
+}
+.service .center .icon-aixin1 {
+    width: .3rem;
+    height: .3rem;
+    line-height: .3rem;
+    font-size: .25rem;
+    color: indianred;
+    margin-left: .16rem;
+    margin-right: .16rem;
+}
+.service .center p {
+    width: .6rem;
+    height: .16rem;
+    line-height: .16rem;
+    font-size: .14rem;
+    color: rgba(0,0,0,.87);
+    margin-right: 2.2rem;
+}
+.service .center .icon-dayuhao-copy-copy{
+    width: .16rem;
+    height: .16rem;
+    line-height: .16rem;
+    font-size: .16rem;
+    font-weight: bolder;
+    margin-right: .12rem;
+    color: #777777;
+}
+
+.service .home {
+    width: inherit;
+    height: .5419rem;
+    display: flex;
+    align-items: center;
+}
+.service .home  .icon-fangzi1 {
+    width: .3rem;
+    height: .3rem;
+    line-height: .3rem;
+    font-size: .25rem;
+    color: coral;
+    margin-left: .16rem;
+    margin-right: .16rem;
+}
+.service .home  p {
+    width: .6rem;
+    height: .16rem;
+    line-height: .16rem;
+    font-size: .14rem;
+    color: rgba(0,0,0,.87);
+    margin-right: 2.2rem;
+}
+.service .home  .icon-dayuhao-copy-copy{
+    width: .16rem;
+    height: .16rem;
+    line-height: .16rem;
+    font-size: .16rem;
+    font-weight: bolder;
+    margin-right: .12rem;
+    color: #777777;
+}
+
+
+
+.way {
+    width: inherit;
+    height: .5419rem;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+}
+.way .icon-f {
+    width: .3rem;
+    height: .3rem;
+    line-height: .3rem;
+    font-size: .25rem;
+    color: orange;
+    margin-left: .16rem;
+    margin-right: .16rem;
+}
+.way p {
+    width: .6rem;
+    height: .16rem;
+    line-height: .16rem;
+    font-size: .14rem;
+    color: rgba(0,0,0,.87);
+    margin-right: 2.2rem;
+}
+.way .icon-dayuhao-copy-copy{
+    width: .16rem;
+    height: .16rem;
+    line-height: .16rem;
+    font-size: .22rem;
+    font-weight: bolder;
+    margin-right: .12rem;
+    color: #777777;
+}
+
+.setup {
+    width: inherit;
+    height: .5419rem;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+}
+.setup  .icon-chilun {
+    width: .3rem;
+    height: .3rem;
+    line-height: .3rem;
+    font-size: .22rem;
+    color: gray;
+    margin-left: .16rem;
+    margin-right: .16rem;
+}
+.setup  p {
+    width: .6rem;
+    height: .16rem;
+    line-height: .16rem;
+    font-size: .14rem;
+    color: rgba(0,0,0,.87);
+    margin-right: 2.2rem;
+}
+.setup  .icon-dayuhao-copy-copy{
+    width: .16rem;
+    height: .16rem;
+    line-height: .16rem;
+    font-size: .16rem;
+    font-weight: bolder;
+    margin-right: .12rem;
+    color: #777777;
+}
+
+.line2 {
+    width: inherit;
+    height: .3041rem;
+    background-color: #f5f5f5;
+}
+
+
+.foot-wapper {
+    width: inherit;
+    height: .52rem;
+    position: fixed;
+    z-index: 99;
+    top: 6.14rem;/*6.14*/
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+}
+.foot-wapper a {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: .9094rem;
+    height: .3884rem;
+    box-sizing: border-box;
+}
+.foot-wapper a:nth-child(3){
+    width: 1.024rem;
+}
+.foot-wapper a span {
+    width: .2084rem;
+    height: .2084rem
+}
+.foot-wapper a .iconfont {
+    font-size: .2048rem;
+    color: #999999;
+}
+.foot-wapper a p {
+    font-size: .1146rem;
+    color: #999999;
+    font-weight: bold;
+}
+.foot-wapper a:nth-child(4) .iconfont {
+    color: #ff6700;
+}
+
+.foot-wapper a:nth-child(4) p {
+    color: #ff6700;
+}

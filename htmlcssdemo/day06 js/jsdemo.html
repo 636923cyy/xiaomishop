@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--甜筒第二个半价-->
+    <script>
+        var userinput = prompt('请输入购买数量 ');
+        if (userinput == parseInt(userinput) && !isNaN(userinput) && userinput > 0){
+            var price = 10;
+            var price2 = 5;
+            var a = parseInt(userinput) % 2;
+            var count =  parseInt(userinput) / 2;
+            if (a === 0){
+                sum =  (price +price2) * count;
+                console.log(sum);
+            }else{
+                sum =  Math.ceil(count) *price + Math.floor(count) * price2;
+                console.log(sum);
+            }
+
+           console.log()
+        } else {
+            console.log('请输入合法数字');
+        }
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

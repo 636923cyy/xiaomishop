@@ -1,0 +1,1014 @@
+html{
+    font-size: 100px;
+}
+
+
+/*主体容器定宽*/
+/*其他两个属性用于去除窗口下拉条*/
+.main {
+    width: 100vw;
+    overflow: scroll;
+}
+.main::-webkit-scrollbar {
+    display: none;
+}
+
+
+/*顶部导航栏绝对定位*/
+.header-wapper {
+    width: inherit;
+    height: .7376rem;
+
+    /*绝对定位关键属性*/
+    position: fixed;
+    z-index: 100;
+
+    background: #f2f2f2;
+}
+.header-wapper .header-up {
+    width: inherit;
+    height: .4376rem;
+    background-color: #f2f2f2;
+    color: #666;
+
+    /*弹性布局*/
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.header-wapper .header-up .loge {
+    width: .5209rem;
+    height: .1884rem;
+
+    /*弹性布局*/
+    display: flex;
+    justify-content: center;
+}
+.header-wapper .header-up .loge img {
+    width: .25rem;
+    height: .1644rem;
+}
+.header-wapper .header-up .title {
+    width: 2.7102rem;
+    height: .3326rem;
+    color: rgba(0 0 0 0.3);
+    font-size: .1563333rem;
+    background-color: #fff;
+
+    /*边框*/
+    border: 1px solid #e5e5e5;
+
+    /*弹性布局*/
+    display: flex;
+    align-items: center;
+}
+.header-wapper .header-up .title span {
+    margin: 0 10px;
+}
+.header-wapper .header-up .user {
+    width: .5209rem;
+    height: .3126rem;
+
+    /*弹性布局*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-wapper .header-up .user .iconfont {
+    font-size: .2rem;
+    /*字体加粗*/
+    font-weight: bolder;
+    color: #888888;
+}
+.header-wapper .header-bottom {
+    width: inherit;
+    height: .3rem;
+
+    /*弹性布局*/
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.header-wapper .header-bottom .item {
+    width: .5315rem;
+    height: .3rem;
+    line-height: .3rem;/*与height值箱等 字体垂直居中*/
+    font-size: .1354rem;
+    color: #747474;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.header-wapper .header-bottom .item:nth-child(5){
+    width: .6669rem;
+    height: .3rem;
+}
+.header-wapper .header-bottom .item:last-child{
+    width: .3542rem;
+    height: .2865rem;
+}
+.header-wapper .header-bottom .item span {
+    width: .271rem;
+    height: inherit;
+}
+.header-wapper .header-bottom .item:nth-child(5) span {
+    width: .4064rem;
+    height: inherit;
+}
+.header-wapper .header-bottom .item:last-child span {
+    display: flex;
+    justify-content: center;
+}
+.header-wapper .header-bottom .item .iconfont {
+    font-size: .1284rem;
+}
+
+
+/*底部导航栏绝对定位*/
+.foot-wapper {
+    width: inherit;
+    height: .52rem;
+
+    /*绝对定位关键属性*/
+    position: fixed;
+    z-index: 99;
+    top: 6.14rem;/*6.14*/
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+}
+.foot-wapper a {
+    width: .9094rem;
+    height: .3884rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.foot-wapper a:nth-child(3){
+    width: 1.024rem;
+}
+.foot-wapper a span {
+    width: .2084rem;
+    height: .2084rem
+}
+.foot-wapper a .iconfont {
+    font-size: .2048rem;
+    color: #999999;
+}
+.foot-wapper a p {
+    font-size: .1146rem;
+    font-weight: bold;
+    color: #999999;
+}
+.foot-wapper a:first-child .iconfont{
+    color: #ff6700;
+}
+.foot-wapper a:first-child p {
+    color: #ff6700;
+}
+
+
+/*网页中间的主体部分*/
+.body {
+    width: inherit;
+    height: 100%;
+    padding: .5rem 0 .52rem 0;
+}
+.body .banner {
+    width: inherit;
+    height: 1.875rem;
+}
+.body .banner img {
+    width: inherit;
+    height: inherit;
+}
+.body .topic {
+    width: inherit;
+    height: 1.584rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.body .topic .item {
+    width: .7504rem;
+    height: .792rem;
+}
+.body .topic .item a {
+    width: inherit;
+    height: inherit;
+    display: flex;
+}
+.body .topic img {
+    width: inherit;
+    height: inherit;
+}
+.body .line {
+    width: inherit;
+    height: .0834rem;
+    color: rgb(245,245,245);
+}
+.body .product {
+    width: inherit;
+}
+.body .product .item1 {
+    width: inherit;
+    height: 2.6471rem;
+}
+.body .product .item1 .left {
+    width: 1.8655rem;
+    height: inherit;
+    float: left;
+}
+.body .product .item1 .left img {
+    width: inherit;
+    height: inherit;
+}
+.body .product .item1 .right {
+    width: 1.8655rem;
+    height: inherit;
+    float: right;
+}
+.body .product .item1 .right .top {
+    width: inherit;
+    height: 1.3131rem;
+}
+.body .product .item1 .right .bottom {
+    width: inherit;
+    height: 1.3131rem;
+    margin-top: .02rem;
+}
+.body .product .item1 .right img {
+    width: inherit;
+    height: 1.3131rem;
+}
+.body .product .item2 {
+    width: inherit;
+    height: 1.3131rem;
+    background: white;
+    margin-top: .05rem;
+}
+.body .product .item2 .img1-wapper{
+    width: 1.876rem;
+    height: inherit;
+    float: left;
+}
+.body .product .item2 .img2-wapper{
+    width: 1.876rem;
+    height: inherit;
+    float: right;
+
+}
+.body .product .item2 .img1-wapper img{
+    width: inherit;
+    height: inherit;
+}
+.body .product .item2 .img2-wapper img{
+    width: inherit;
+    height: inherit;
+
+}
+.body .product .line1 {
+    width: inherit;
+    height: .0834rem;
+    color: rgb(245,245,245);
+}
+.body .product .item3 {
+    width: inherit;
+    height: 1.459rem;
+}
+.body .product .item3 img {
+    width: inherit;
+    height: inherit;
+}
+.body .product .item4 {
+    width: inherit;
+    height: 2.2929rem;
+}
+.body .product .item4 img {
+    width: inherit;
+    height: inherit;
+}
+
+
+
+.body .product .line2 {
+    width: inherit;
+    height: .0546rem;
+    color: rgb(245,245,245);
+}
+.body .product .item5 {
+    width: inherit;
+    height: 2.532rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+.body .product .item5 .phone1 {
+    width: 1.7823rem;
+    height: 2.532rem;
+}
+.body .product .item5 .phone1 a {
+    width: inherit;
+    height: inherit;
+}
+.body .product .item5 .phone1 a .img {
+    width: 1.7823rem;
+    height: 1.459rem;
+}
+.body .product .item5 .phone1 a .img img {
+    width: inherit;
+    height: inherit;
+}
+.body .product .item5 .phone1 a .info {
+    width: 1.499rem;/*1.783rem*/
+    height: 1.073rem;
+    padding: .104rem .14rem;
+}
+.body .product .item5 .phone1 a .info h1 {
+    width: 1.501rem;
+    height: .16rem;
+    font-size: .1459rem;
+    text-align: center;
+    color: rgba(0,0,0,0.87);
+    margin: 0 auto;
+
+}
+.body .product .item5 .phone1 a .info span {
+    width: 1.501rem;
+    height: .152rem;
+    font-size: .1146rem;
+    color: rgba(0,0,0,0.54);
+    margin: .05rem auto;
+    display: flex;
+    justify-content: center;
+}
+.body .product .item5 .phone1 a .info .price {
+    width: 1.1rem;
+    height: .22rem;
+   display: flex;
+    margin: auto;
+}
+.body .product .item5 .phone1 a .info .price .p1 {
+    width: .55rem;
+    height: inherit;
+    font-size: .1459rem;
+    color: #ea625b;
+    margin: 0 auto;
+}
+.body .product .item5 .phone1 a .info .price .p2 {
+    width: .105rem;
+    height: inherit;
+    font-size: .105rem;
+    color: #ea625b;
+    margin-right: .05rem;
+}
+.body .product .item5 .phone1 a .info .price .p3 {
+    width: .45rem;
+    height: inherit;
+    font-size: .115rem;
+    color: rgba(0,0,0,0.54);
+    text-decoration: line-through;
+}
+.body .product .item5 .phone1 a .info .price {
+    display: flex;
+    margin: 0 auto;
+}
+.body .product .item5 .phone1 a .info .price .p1,.p2,.p3 {
+    line-height: .22rem;
+}
+.body .product .item5 .phone1 a .info .p4 {
+    width: 1.1421rem;/*1.0421rem*/
+    height: .3028rem;
+    line-height: .3038rem;
+    font-size: .125rem;
+    color: #ffffff;
+    background-color: #ea625b;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: .05rem;
+}
+.body .product .item5 .phone2 {
+    width: 1.7823rem;
+    height: 2.532rem;
+}
+.body .product .item5 .phone2 a {
+    width: inherit;
+    height: inherit;
+}
+.body .product .item5 .phone2 a .img {
+    width: 1.7823rem;
+    height: 1.459rem;
+}
+.body .product .item5 .phone2 a .img img {
+    width: inherit;
+    height: inherit;
+}
+.body .product .item5 .phone2 a .info {
+    width: 1.499rem;/*1.783rem*/
+    height: 1.073rem;
+    padding: .104rem .14rem;
+}
+.body .product .item5 .phone2 a .info h1 {
+    width: 1.501rem;
+    height: .16rem;
+    font-size: .1459rem;
+    color: rgba(0,0,0,0.87);
+    margin: 0 auto;
+    text-align: center;
+}
+.body .product .item5 .phone2 a .info span {
+    width: 1.501rem;
+    height: .152rem;
+    font-size: .1146rem;
+    color: rgba(0,0,0,0.54);
+    margin: .05rem auto;
+    display: flex;
+    justify-content: center;
+}
+.body .product .item5 .phone2 a .info .price {
+    width: 1.1rem;
+    height: .22rem;
+    display: flex;
+    margin: auto;
+}
+.body .product .item5 .phone2 a .info .price .p1 {
+    width: .55rem;
+    height: inherit;
+    font-size: .1459rem;
+    color: #ea625b;
+    margin: 0 auto;
+}
+.body .product .item5 .phone2 a .info .price .p2 {
+    width: .105rem;
+    height: inherit;
+    font-size: .105rem;
+    color: #ea625b;
+    margin-right: .05rem;
+}
+.body .product .item5 .phone2 a .info .price .p3 {
+    width: .45rem;
+    height: inherit;
+    font-size: .115rem;
+    color: rgba(0,0,0,0.54);
+    text-decoration: line-through;
+}
+.body .product .item5 .phone2 a .info .price {
+    display: flex;
+    margin: 0 auto;
+}
+.body .product .item5 .phone2 a .info .price .p1,.p2,.p3 {
+    line-height: .22rem;
+}
+.body .product .item5 .phone2 a .info .p4 {
+    width: 1.1421rem;/*1.0421rem*/
+    height: .3028rem;
+    font-size: .125rem;
+    color: #ffffff;
+    background-color: #ea625b;
+    margin: 0 auto;
+    text-align: center;
+    line-height: .3038rem;
+    border-radius: .05rem;
+}
+
+
+.body .product .line2 {
+    width: inherit;
+    height: .0546rem;
+    color: rgb(245,245,245);
+}
+.body .product .item6 {
+    width: inherit;
+    height: 2.532rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+.body .product .item6 .phone1 {
+    width: 1.7823rem;
+    height: 2.532rem;
+}
+.body .product .item6 .phone1 a {
+    width: inherit;
+    height: inherit;
+}
+.body .product .item6 .phone1 a .img {
+    width: 1.7823rem;
+    height: 1.459rem;
+}
+.body .product .item6 .phone1 a .img img {
+    width: inherit;
+    height: inherit;
+}
+.body .product .item6 .phone1 a .info {
+    width: 1.499rem;/*1.783rem*/
+    height: 1.073rem;
+    padding: .104rem .14rem;
+}
+.body .product .item6 .phone1 a .info h1 {
+    width: 1.501rem;
+    height: .16rem;
+    font-size: .1459rem;
+    color: rgba(0,0,0,0.87);
+    margin: 0 auto;
+    text-align: center;
+}
+.body .product .item6 .phone1 a .info span {
+    width: 1.501rem;
+    height: .152rem;
+    font-size: .1146rem;
+    color: rgba(0,0,0,0.54);
+    margin: .05rem auto;
+    display: flex;
+    justify-content: center;
+}
+.body .product .item6 .phone1 a .info .price {
+    width: 1.1rem;
+    height: .22rem;
+    display: flex;
+    margin: auto;
+}
+.body .product .item6 .phone1 a .info .price .p1 {
+    width: .55rem;
+    height: inherit;
+    font-size: .1459rem;
+    color: #ea625b;
+    margin: 0 auto;
+}
+.body .product .item6 .phone1 a .info .price .p2 {
+    width: .105rem;
+    height: inherit;
+    font-size: .105rem;
+    color: #ea625b;
+    margin-right: .05rem;
+}
+.body .product .item6 .phone1 a .info .price .p3 {
+    width: .45rem;
+    height: inherit;
+    font-size: .115rem;
+    color: rgba(0,0,0,0.54);
+    text-decoration: line-through;
+}
+.body .product .item6 .phone1 a .info .price {
+    display: flex;
+    margin: 0 auto;
+}
+.body .product .item6 .phone1 a .info .price .p1,.p2,.p3 {
+    line-height: .22rem;
+}
+.body .product .item6 .phone1 a .info .p4 {
+    width: 1.1421rem;/*1.0421rem*/
+    height: .3028rem;
+    font-size: .125rem;
+    color: #ffffff;
+    background-color: #ea625b;
+    margin: 0 auto;
+    text-align: center;
+    line-height: .3038rem;
+    border-radius: .05rem;
+}
+.body .product .item6 .phone2 {
+    width: 1.7823rem;
+    height: 2.532rem;
+}
+.body .product .item6 .phone2 a {
+    width: inherit;
+    height: inherit;
+}
+.body .product .item6 .phone2 a .img {
+    width: 1.7823rem;
+    height: 1.459rem;
+}
+.body .product .item6 .phone2 a .img img {
+    width: inherit;
+    height: inherit;
+}
+.body .product .item6 .phone2 a .info {
+    width: 1.499rem;/*1.783rem*/
+    height: 1.073rem;
+    padding: .104rem .14rem;
+}
+.body .product .item6 .phone2 a .info h1 {
+    width: 1.501rem;
+    height: .16rem;
+    font-size: .1459rem;
+    color: rgba(0,0,0,0.87);
+    margin: 0 auto;
+    text-align: center;
+}
+.body .product .item6 .phone2 a .info span {
+    width: 1.501rem;
+    height: .152rem;
+    font-size: .1146rem;
+    color: rgba(0,0,0,0.54);
+    margin: .05rem auto;
+    display: flex;
+    justify-content: center;
+}
+.body .product .item6 .phone2 a .info .price {
+    width: 1.1rem;
+    height: .22rem;
+    display: flex;
+    margin: auto;
+}
+.body .product .item6 .phone2 a .info .price .p1 {
+    width: .55rem;
+    height: inherit;
+    font-size: .1459rem;
+    color: #ea625b;
+    margin: 0 auto;
+}
+.body .product .item6 .phone2 a .info .price .p2 {
+    width: .105rem;
+    height: inherit;
+    font-size: .105rem;
+    color: #ea625b;
+    margin-right: .05rem;
+}
+.body .product .item6 .phone2 a .info .price .p3 {
+    width: .45rem;
+    height: inherit;
+    font-size: .115rem;
+    color: rgba(0,0,0,0.54);
+    text-decoration: line-through;
+}
+.body .product .item6 .phone2 a .info .price {
+    display: flex;
+    margin: 0 auto;
+}
+.body .product .item6 .phone2 a .info .price .p1,.p2,.p3 {
+    line-height: .22rem;
+}
+.body .product .item6 .phone2 a .info .p4 {
+    width: 1.1421rem;/*1.0421rem*/
+    height: .3028rem;
+    font-size: .125rem;
+    color: #ffffff;
+    background-color: #ea625b;
+    margin: 0 auto;
+    text-align: center;
+    line-height: .3038rem;
+    border-radius: .05rem;
+}
+
+
+
+.body .product .line2 {
+    width: inherit;
+    height: .0546rem;
+    color: rgb(245,245,245);
+}
+.body .product .item7 {
+    width: inherit;
+    height: 2.532rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+.body .product .item7 .phone1 {
+    width: 1.7823rem;
+    height: 2.532rem;
+}
+.body .product .item7 .phone1 a {
+    width: inherit;
+    height: inherit;
+}
+.body .product .item7 .phone1 a .img {
+    width: 1.7823rem;
+    height: 1.459rem;
+}
+.body .product .item7 .phone1 a .img img {
+    width: inherit;
+    height: inherit;
+}
+.body .product .item7 .phone1 a .info {
+    width: 1.499rem;/*1.783rem*/
+    height: 1.073rem;
+    padding: .104rem .14rem;
+}
+.body .product .item7 .phone1 a .info h1 {
+    width: 1.501rem;
+    height: .16rem;
+    font-size: .1459rem;
+    color: rgba(0,0,0,0.87);
+    margin: 0 auto;
+    text-align: center;
+}
+.body .product .item7 .phone1 a .info span {
+    width: 1.501rem;
+    height: .152rem;
+    font-size: .1146rem;
+    color: rgba(0,0,0,0.54);
+    margin: .05rem auto;
+    display: flex;
+    justify-content: center;
+}
+.body .product .item7 .phone1 a .info .price {
+    width: 1.1rem;
+    height: .22rem;
+    display: flex;
+    margin: auto;
+}
+.body .product .item7 .phone1 a .info .price .p1 {
+    width: .55rem;
+    height: inherit;
+    font-size: .1459rem;
+    color: #ea625b;
+    margin: 0 auto;
+}
+.body .product .item7 .phone1 a .info .price .p2 {
+    width: .105rem;
+    height: inherit;
+    font-size: .105rem;
+    color: #ea625b;
+    margin-right: .05rem;
+}
+.body .product .item7 .phone1 a .info .price .p3 {
+    width: .45rem;
+    height: inherit;
+    font-size: .115rem;
+    color: rgba(0,0,0,0.54);
+    text-decoration: line-through;
+}
+.body .product .item7 .phone1 a .info .price {
+    display: flex;
+    margin: 0 auto;
+}
+.body .product .item7 .phone1 a .info .price .p1,.p2,.p3 {
+    line-height: .22rem;
+}
+.body .product .item7 .phone1 a .info .p4 {
+    width: 1.1421rem;/*1.0421rem*/
+    height: .3028rem;
+    font-size: .125rem;
+    color: #ffffff;
+    background-color: #ea625b;
+    margin: 0 auto;
+    text-align: center;
+    line-height: .3038rem;
+    border-radius: .05rem;
+}
+.body .product .item7 .phone2 {
+    width: 1.7823rem;
+    height: 2.532rem;
+}
+.body .product .item7 .phone2 a {
+    width: inherit;
+    height: inherit;
+}
+.body .product .item7 .phone2 a .img {
+    width: 1.7823rem;
+    height: 1.459rem;
+}
+.body .product .item7 .phone2 a .img img {
+    width: inherit;
+    height: inherit;
+}
+.body .product .item7 .phone2 a .info {
+    width: 1.499rem;/*1.783rem*/
+    height: 1.073rem;
+    padding: .104rem .14rem;
+}
+.body .product .item7 .phone2 a .info h1 {
+    width: 1.501rem;
+    height: .16rem;
+    font-size: .1459rem;
+    color: rgba(0,0,0,0.87);
+    margin: 0 auto;
+    text-align: center;
+}
+.body .product .item7 .phone2 a .info span {
+    width: 1.501rem;
+    height: .152rem;
+    font-size: .1146rem;
+    color: rgba(0,0,0,0.54);
+    margin: .05rem auto;
+    display: flex;
+    justify-content: center;
+}
+.body .product .item7 .phone2 a .info .price {
+    width: 1.1rem;
+    height: .22rem;
+    display: flex;
+    margin: auto;
+}
+.body .product .item7 .phone2 a .info .price .p1 {
+    width: .55rem;
+    height: inherit;
+    font-size: .1459rem;
+    color: #ea625b;
+    margin: 0 auto;
+}
+.body .product .item7 .phone2 a .info .price .p2 {
+    width: .105rem;
+    height: inherit;
+    font-size: .105rem;
+    color: #ea625b;
+    margin-right: .05rem;
+}
+.body .product .item7 .phone2 a .info .price .p3 {
+    width: .45rem;
+    height: inherit;
+    font-size: .115rem;
+    color: rgba(0,0,0,0.54);
+    text-decoration: line-through;
+}
+.body .product .item7 .phone2 a .info .price {
+    display: flex;
+    margin: 0 auto;
+}
+.body .product .item7 .phone2 a .info .price .p1,.p2,.p3 {
+    line-height: .22rem;
+}
+.body .product .item7 .phone2 a .info .p4 {
+    width: 1.1421rem;/*1.0421rem*/
+    height: .3028rem;
+    font-size: .125rem;
+    color: #ffffff;
+    background-color: #ea625b;
+    margin: 0 auto;
+    text-align: center;
+    line-height: .3038rem;
+    border-radius: .05rem;
+}
+
+
+
+.body .product .line2 {
+    width: inherit;
+    height: .0546rem;
+    color: rgb(245,245,245);
+}
+.body .product .item8 {
+    width: inherit;
+    height: 2.532rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+.body .product .item8 .phone1 {
+    width: 1.7823rem;
+    height: 2.532rem;
+}
+.body .product .item8 .phone1 a {
+    width: inherit;
+    height: inherit;
+}
+.body .product .item8 .phone1 a .img {
+    width: 1.7823rem;
+    height: 1.459rem;
+}
+.body .product .item8 .phone1 a .img img {
+    width: inherit;
+    height: inherit;
+}
+.body .product .item8 .phone1 a .info {
+    width: 1.499rem;/*1.783rem*/
+    height: 1.073rem;
+    padding: .104rem .14rem;
+}
+.body .product .item8 .phone1 a .info h1 {
+    width: 1.501rem;
+    height: .16rem;
+    font-size: .1459rem;
+    color: rgba(0,0,0,0.87);
+    margin: 0 auto;
+    text-align: center;
+}
+.body .product .item8 .phone1 a .info span {
+    width: 1.501rem;
+    height: .152rem;
+    font-size: .1146rem;
+    color: rgba(0,0,0,0.54);
+    margin: .05rem auto;
+    display: flex;
+    justify-content: center;
+}
+.body .product .item8 .phone1 a .info .price {
+    width: 1.1rem;
+    height: .22rem;
+    display: flex;
+    margin: auto;
+}
+.body .product .item8 .phone1 a .info .price .p1 {
+    width: .55rem;
+    height: inherit;
+    font-size: .1459rem;
+    color: #ea625b;
+    margin: 0 auto;
+}
+.body .product .item8 .phone1 a .info .price .p2 {
+    width: .105rem;
+    height: inherit;
+    font-size: .105rem;
+    color: #ea625b;
+    margin-right: .05rem;
+}
+.body .product .item8 .phone1 a .info .price .p3 {
+    width: .45rem;
+    height: inherit;
+    font-size: .115rem;
+    color: rgba(0,0,0,0.54);
+    text-decoration: line-through;
+}
+.body .product .item8 .phone1 a .info .price {
+    display: flex;
+    margin: 0 auto;
+}
+.body .product .item8 .phone1 a .info .price .p1,.p2,.p3 {
+    line-height: .22rem;
+}
+.body .product .item8 .phone1 a .info .p4 {
+    width: 1.1421rem;/*1.0421rem*/
+    height: .3028rem;
+    font-size: .125rem;
+    color: #ffffff;
+    background-color: #ea625b;
+    margin: 0 auto;
+    text-align: center;
+    line-height: .3038rem;
+    border-radius: .05rem;
+}
+.body .product .item8 .phone2 {
+    width: 1.7823rem;
+    height: 2.532rem;
+}
+.body .product .item8 .phone2 a {
+    width: inherit;
+    height: inherit;
+}
+.body .product .item8 .phone2 a .img {
+    width: 1.7823rem;
+    height: 1.459rem;
+}
+.body .product .item8 .phone2 a .img img {
+    width: inherit;
+    height: inherit;
+}
+.body .product .item8 .phone2 a .info {
+    width: 1.499rem;/*1.783rem*/
+    height: 1.073rem;
+    padding: .104rem .14rem;
+}
+.body .product .item8 .phone2 a .info h1 {
+    width: 1.501rem;
+    height: .16rem;
+    font-size: .1459rem;
+    color: rgba(0,0,0,0.87);
+    margin: 0 auto;
+    text-align: center;
+}
+.body .product .item8 .phone2 a .info span {
+    width: 1.501rem;
+    height: .152rem;
+    font-size: .1146rem;
+    color: rgba(0,0,0,0.54);
+    margin: .05rem auto;
+    display: flex;
+    justify-content: center;
+}
+.body .product .item8 .phone2 a .info .price {
+    width: 1.1rem;
+    height: .22rem;
+    display: flex;
+    margin: auto;
+}
+.body .product .item8 .phone2 a .info .price .p1 {
+    width: .55rem;
+    height: inherit;
+    font-size: .1459rem;
+    color: #ea625b;
+    margin: 0 auto;
+}
+.body .product .item8 .phone2 a .info .price .p2 {
+    width: .105rem;
+    height: inherit;
+    font-size: .105rem;
+    color: #ea625b;
+    margin-right: .05rem;
+}
+.body .product .item8 .phone2 a .info .price .p3 {
+    width: .45rem;
+    height: inherit;
+    font-size: .115rem;
+    color: rgba(0,0,0,0.54);
+    text-decoration: line-through;
+}
+.body .product .item8 .phone2 a .info .price {
+    display: flex;
+    margin: 0 auto;
+}
+.body .product .item8 .phone2 a .info .price .p1,.p2,.p3 {
+    line-height: .22rem;
+}
+.body .product .item8 .phone2 a .info .p4 {
+    width: 1.1421rem;/*1.0421rem*/
+    height: .3028rem;
+    font-size: .125rem;
+    color: #ffffff;
+    background-color: #ea625b;
+    margin: 0 auto;
+    text-align: center;
+    line-height: .3038rem;
+    border-radius: .05rem;
+}

@@ -1,0 +1,55 @@
+.main {
+    width: 100%;
+}
+.main .line {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 25px;
+    background-color: cadetblue;
+}
+.main .title {
+    background-color: cadetblue;
+    font-size: 30px;
+    text-align: center;
+}
+.main .title a{
+    margin-left: 100px;
+}
+.main .title p {
+    margin-top: 20px;
+    font-size: 20px;
+}
+.main .hot-wrapper {
+    width: 1170px;
+    margin: 60px auto 0;
+    font-size: 0;
+}
+.main .hot-wrapper .hot-item {
+    display: inline-block;
+    width: 270px;
+    margin-right: 30px;
+}
+.main .hot-wrapper .hot-item:last-child {
+    margin: 0;
+}
+.main .hot-wrapper .hot-item .avatar {
+    width: 100%;
+    height: 352px;
+}
+.main .hot-wrapper .hot-item .item {
+    text-align: center;
+}
+.main .title1 {
+    background-color: cadetblue;
+}
+.main .title1 p{
+    margin-top:30px ;
+    margin-bottom:20px ;
+    font-size: 20px;
+    text-align: center;
+
+}
+.main .title1 span{
+    font-size: 20px;
+}

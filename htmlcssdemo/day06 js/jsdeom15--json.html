@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--****非常重要****-->
+    <!--json知识的相关练习（与ajax）-->
+    <!--与mock.json文件一起使用 -->
+
+    <!--员工名单-->
+</head>
+<body>
+    <table>
+        <thead>
+        <tr>
+            <th>姓名</th>
+            <th>年龄</th>
+            <th>工资</th>
+            <th>部门</th>
+        </tr>
+        </thead>
+        <tbody id="td">
+
+        </tbody>
+    </table>
+
+
+<script>
+    <!--封装方法 ajax-->
+    function ajax(parm) {
+
+        var xhr = new XMLHttpRequest();
+
+        xhr.open(parm.method,parm.url);
+
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState == 4){
+                //回调pram对象的success方法传递数据过去
+                parm.success(xhr.responseText);
+            }
+        }
+
+        xhr.send();
+    }
+
+    //调用方法
+    ajax({
+        method :'get',
+        url : 'mock.json',
+        success : function (res) {
+            //将字符串转化为对象
+           res = JSON.parse(res);
+
+           var s = '';
+           for (item of res){
+               s += `<tr><td>${item.name}</td><td>${item.age}</td><td>${item.salary}</td><td>${item.dept}</td></tr>`;
+           }
+
+           document.getElementById('td').innerHTML = s;
+           //jquery语法
+           // $('.id').html(s);
+        }
+    });
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id ="c" width = "800" height="600"></canvas>
+
+<script>
+    let c = document.getElementById('c');
+    //ctx是从画板上获取的画笔
+    let ctx = c.getContext('2d');
+    //创建一个图片
+    //浏览器加载图片是异步
+    let image = new Image();
+    image.src = './background.png';
+    //图片加载完成之后会调用这个方法
+    image.onload = function () {
+        ctx.drawImage(image,0,0,image.width,image.height,x,y,image.width,image.height);
+    };
+    addEventListener();
+
+</script>
+</body>
+</html>

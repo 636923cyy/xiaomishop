@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--ajax相关知识-->
+    <!--以下功能的实现就能够获取网络上的数据了-->
+    <!--、怎么发送ajax请求
+    1.创建对象
+
+    2.打开请求
+
+    3.绑定处理函数
+
+    4.发送请求
+    -->
+
+  <script>
+      //1.创建对象
+      var xhr = new XMLHttpRequest();
+
+      //2.打开请求 参数：方法，地址
+      //请求方法 常用 get post
+      xhr.open('get','https://www.baidu.com');
+
+      //3.绑定处理函数
+      xhr.onreadystatechange = function () {
+        if (xhr.readyState == 4){
+           console.log(xhr.responseText);
+        }
+      }
+
+      //4.发送请求
+      xhr.send();
+
+  </script>
+
+
+</head>
+<body>
+
+</body>
+</html>

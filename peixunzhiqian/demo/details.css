@@ -1,0 +1,167 @@
+.main {
+    width: 100%;
+}
+.banner-wrapper {
+    width: 100%;
+    height: 610px;
+}
+.banner-wrapper img {
+    width: inherit;
+    height: inherit;
+}
+.product-wrapper {
+    width: 1170px;
+    height: 847px;
+    margin: 120px auto 0;
+}
+.product-wrapper .left {
+    width: 700px;
+    height: 847px;
+    float: left;
+}
+.product-wrapper .left .itme1 img {
+    width: inherit;
+    height: 710px;
+}
+.product-wrapper .left .itme2 img {
+    width: 166px;
+    height: 166px;
+    float: left;
+    margin-right: 30px;
+}
+.product-wrapper .left .itme2 img:last-child {
+    margin-right: 0;
+}
+.product-wrapper .left .itme3 {
+
+}
+.product-wrapper .right {
+    width: 400px;
+    height: 847px;
+    float: right;
+    margin-left: 30px;
+}
+.product-wrapper .right .introduce .title {
+    font-size: 21px;
+    color: #2d3a4b;
+    margin-bottom: 26px;
+}
+.product-wrapper .right .introduce .price {
+    font-size: 18px;
+    color: #2d3a4b;
+    margin-bottom: 36px;
+}
+.product-wrapper .right .introduce .name {
+    font-size: 12px;
+    color: #2d3a4b;
+    margin-bottom: 26px;
+}
+.product-wrapper .right .introduce .name .item {
+    font-size: 12px;
+    color: #ff0036;
+}
+.product-wrapper .right .introduce .brand {
+    font-size: 12px;
+    color: #2d3a4b;
+    margin-bottom: 22px;
+}
+.product-wrapper .right .introduce .brand .item {
+    font-size: 12px;
+    color: #ff0036;
+}
+.product-wrapper .right .introduce .text {
+    font-size: 12px;
+    color: #666666;
+}
+.product-wrapper .right .select {
+    margin-top: 38px;
+    margin-bottom: 40px;
+    margin-right: 44px;
+}
+
+.product-wrapper .right .select input{
+    width: 30px;
+    height: 15px;
+}
+
+.product-wrapper .right .color .title {
+    font-size: 12px;
+    color: #2d3a4b;
+    display: inline-block;
+}
+.product-wrapper .right .addcar {
+    width: 212px;
+    height: 54px;
+    background-color: #ff0036;
+    cursor: pointer;
+    color: #f7f7f7;
+    text-align: center;
+    font-size: 18px;
+    line-height: 54px;
+    opacity: .7;
+}
+.jieshao-wrapper {
+    width: 1170px;
+    margin: 136px auto 0;
+}
+.jieshao-wrapper .title {
+    font-size: 14px;
+    color: #2d3a4b;
+    margin-bottom: 42px;
+}
+.jieshao-wrapper .title .name {
+    margin-right: 70px;
+}
+.jieshao-wrapper .title .name:last-child {
+    margin-right: 0;
+}
+.jieshao-wrapper .neirong {
+    font-size: 12px;
+    color: #666666;
+}
+.like-wrapper {
+    width: 100%;
+    margin: 140px auto 0;
+    background-color: bisque;
+}
+.like-wrapper .title {
+    text-align: center;
+}
+.like-wrapper .title .item1 {
+    font-size: 25px;
+    color: #2d3a4b;
+    margin-top: 136px;
+    margin-bottom: 30px;
+}
+.like-wrapper .title .item2 {
+    font-size: 14px;
+    color: #666666;
+    margin-bottom: 82px;
+}
+.products-wrapper {
+    width: 1170px;
+    margin: 40px auto 0;
+    font-size: 0;
+}
+.products-wrapper .product {
+    float: left;
+}
+.products-wrapper .product .item {
+    text-align: center;
+}
+.products-wrapper .product .title {
+    font-size: 20px;
+    color: #2d3a4b;
+    font-weight: bold;
+    margin-top: 40px;
+}
+.products-wrapper .product .desc {
+    font-size: 14px;
+    color: #666666;
+    margin-top: 20px;
+}
+.products-wrapper .product .price {
+    font-size: 17px;
+    color: #ff0036;
+    margin: 30px 0px 70px 0px;
+}

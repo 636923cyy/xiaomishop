@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--jquery练习自定义弹窗-->
+
+    <style>
+        .main {
+            display: none;
+            justify-content: center;
+            align-items: center;
+
+            position: fixed;
+            left: 0;
+            top: 0;
+
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(0,0,0,.3);
+        }
+        .item {
+            width: 300px;
+            height: 150px;
+            background-color: #fff;
+        }
+        .test {
+            width: inherit;
+            height: 50px;
+            font-size: 15px;
+            text-align: center;
+            line-height: 50px;
+        }
+        .test1 {
+            width: inherit;
+            height: 50px;
+            font-size: 20px;
+            text-align: center;
+            line-height: 50px;
+        }
+        .test2 {
+            width: inherit;
+            height: 50px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .test2 button {
+            width: 40px;
+            height: 40px;
+            font-size: 10px;
+        }
+    </style>
+
+    <script src="jquery-3.4.1.js"></script>
+    <script>
+        let isdelete = false;
+        function show() {
+            $('.main').attr('style','display:flex');
+        }
+        function hiddent(x,e) {
+            if (e != undefined){
+                e.cancelable = true;
+            }
+            $('.main').attr('style','display:none');
+            isdelete = x;
+        }
+    </script>
+
+</head>
+<body>
+
+<button type="button" onclick="show();">删除</button>
+
+<div class="main" onclick="hiddent(false)">
+    <div class="item">
+        <div class="test">提示信息</div>
+        <div class="test1">您确定要删除吗？</div>
+        <div class="test2">
+            <button type="button" onclick="hiddent(true,event);">确定</button>
+            <button type="button" onclick="hiddent(false);">取消</button>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

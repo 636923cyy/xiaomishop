@@ -1,0 +1,16 @@
+.main {
+  color: #ff0036;
+  font-size: 16px;
+}
+.main1 .item {
+  color: #0ff;
+}
+.main1 .item .item2 {
+  color: #228b22;
+}
+.main1 .item .item3 {
+  color: #4b0082;
+}
+.main1 .item .item4 {
+  color: #ff0;
+}

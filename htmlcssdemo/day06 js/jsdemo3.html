@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--鼠标悬停一个元素另一个元素展示-->
+    <style>
+        .main{
+            width: 800px;
+            height: 400px;
+            border: 1px solid black;
+            display:flex;
+        }
+        .main .item {
+            width: 200px;
+            height: inherit;
+            background-color:darkcyan;
+        }
+        .main .item2 {
+            width: 600px;
+            height: inherit;
+            background-color: sandybrown;
+            display: none;
+        }
+    </style>
+
+
+    <script>
+        function showitem2() {
+            document.getElementById('item2').setAttribute('style','display:block;');
+        }
+        function hiddentitem2() {
+            document.getElementById('item2').removeAttribute('style');
+        }
+    </script>
+</head>
+<body>
+    <div class="main">
+        <div class="item" onmouseover="showitem2();" onmouseout="hiddentitem2();"></div>
+        <div class="item2" id="item2" onmouseover="showitem2();" onmouseout="hiddentitem2();"></div>
+    </div>
+</body>
+</html>

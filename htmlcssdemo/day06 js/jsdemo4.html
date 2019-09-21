@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--鼠标悬停字体颜色改变-->
+    <style>
+        .item {
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            font-size: 20px;
+            background-color: darkcyan;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="item" id="item" onmouseover="changecolor();" onmouseout="not();">易烊千玺</div>
+
+    <script>
+       function changecolor() {
+           document.getElementById('item').setAttribute('style','color:white');
+       }
+       function not() {
+           document.getElementById('item').removeAttribute('style');
+       }
+    </script>
+
+</body>
+</html>
